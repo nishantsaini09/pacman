@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+   body
+   {
+   	background-image:url(DSCN1930.jpg);
+   	background-size: cover;
+    }
+
+.hello{
+
+          background-color: rgba(0,0,0,0.5);
+          height: 900px;
+          width: 300px;
+          margin:0 auto;
+          padding-left:50px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          border-radius: 15px;
+      }
+    h1{
+    	color: linen;
+    }
+
+    .hello p{ color:goldenrod;
+    }
+
+    </style>
+
+    	<script>
+		function validateform()
+		{
+			var x = document.forms["myform"]["First Name"].value;
+			if(x=="")
+			{
+				window.alert("please fill the name");
+				
+				     return false;
+			}
+			var y = document.forms["myform"]["Course"].value;
+			if(y=="")
+			{
+				window.alert("please fill the Course");
+				
+				     return false;
+			}
+		}
+	</script>
+	<title>Registration Form</title>
+</head>
+<body>
+	<div class="hello">
+		<marquee direction="left"><h1>Registration Form</h1></marquee>
+		<form name="myform" onsubmit="return validateform()">
+<table>
+
+    <tr>
+    	<td>
+    		<p>First Name:</p>
+    		<input type="text" name="First Name" placeholder="Enter your first Name" >
+    	</td>
+    </tr>
+
+    <tr>
+    	<td>
+    		<p>Last Name:</p> 
+    		<input type="text" name="Last Name" placeholder="Enter your last Name" >
+    	</td>
+    </tr>
+
+    <tr>
+    	<td>
+    		<p>D.O.B:</p>
+    		<input type="date" name="D.O.B" placeholder="Enter your d.o.b" >
+    	</td>
+    </tr>
+
+    <tr>
+    	<td>
+    		<p>Course:</p>
+    		<input type="text" name="Course" placeholder="Enter your Course" >
+    	</td>
+    </tr>
+
+    <tr>
+    	<td>
+    		<p>Branch:</p>
+    		<input type="text" name="Branch" placeholder="Enter your Branch" >
+    	</td>
+    </tr>
+
+    <tr>
+    	<td>
+    		<p>Address:</p>
+    		<input type="text" name="Address" placeholder="Enter your Address" >
+    	</td>
+    </tr>
+
+    <tr>
+    	<td>
+    		<p>Mobile no:</p>
+    		<input type="number" min="0000000001" max="9999999999" name="Mobile no" placeholder="Enter your Mobile no." >
+    	</td>
+    </tr>
+
+    <tr>
+    	<td>
+    		<p>E-mail:</p>
+    		<input type="text" name="E-mail" placeholder="Enter your E-mail" >
+    	</td>
+    </tr>
+
+    <tr>
+    	<td>
+    		<p>photo:</p>
+    		<input type="file" name="photo" placeholder="photo" >
+    	</td>
+    </tr>
+    
+
+</table>
+
+<button><center> submit </center></button>
+
+</form>
+
+</div>
+
+</body>
+</html>
